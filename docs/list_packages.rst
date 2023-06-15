@@ -1,10 +1,10 @@
-list\_packages package
+list\_packages
 ======================
 
-Submodules
+Available Functions
 ----------
 
-list\_packages.main module
+list\_packages.main
 --------------------------
 
 .. automodule:: list_packages.main
@@ -12,10 +12,3 @@ list\_packages.main module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
-
-.. automodule:: list_packages
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -3,30 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to list_packages's documentation!
+Python3 module: list_packages
 =========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
-   list_packages
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-
-Module Documentation
-====================
-
-.. toctree::
-   :maxdepth: 1
-
-   list_packages
-
-.. automodule:: list_packages
-   :members:
+   modules
