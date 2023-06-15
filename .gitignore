@@ -4,3 +4,8 @@ venv/
 *.pyc
 __pycache__/
 list_packages.egg-info/
+_build/
+_static/
+_sources/
+.doctrees/
+.cache/
