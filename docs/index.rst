@@ -10,7 +10,7 @@ Welcome to list_packages's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   list_packages
 
 Indices and tables
 ==================
@@ -18,6 +18,10 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+Module Documentation
+====================
 
 .. automodule:: list_packages
    :members:

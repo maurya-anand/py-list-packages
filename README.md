@@ -36,5 +36,3 @@ To use list-packages in a Python notebook, you can import the list_packages modu
    from list_packages import list_installed_packages
    list_installed_packages()
 ```
-
-import list_packages
