@@ -1,6 +1,6 @@
 # list_packages
 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/github/docs/actions/workflows/python-package.yml/badge.svg)
 
 `list_packages` is a Python package that allows you to list the installed Python packages along with their versions and pip install strings.
 
