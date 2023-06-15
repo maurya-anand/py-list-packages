@@ -33,7 +33,7 @@ After installing the package, you can run the list-packages command in the termi
 To use list-packages in a Python notebook, you can import the list_packages module and call the list_installed_packages() function:
 
 ``` python
-   from list_packages.main import list_installed_packages
+   from list_packages import list_installed_packages
    list_installed_packages()
 ```
 
