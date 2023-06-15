@@ -10,7 +10,6 @@ Welcome to list_packages's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
 Indices and tables
 ==================
 
@@ -22,9 +21,7 @@ Indices and tables
 Module Documentation
 ====================
 
-.. automodule:: list_packages
-   :members:
-   :undoc-members:
-   :show-inheritance:
+.. toctree::
+   :maxdepth: 1
 
    list_packages
