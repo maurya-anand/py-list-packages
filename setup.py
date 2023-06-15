@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='list_packages',
+    name='list_packages',  # Update the name to 'list_packages'
     version='1.0.0',
     description='A package to list installed Python packages',
     author='Anand Maurya',
@@ -9,7 +9,7 @@ setup(
     platforms=['Any'],
     packages=find_packages(),
     url='https://github.com/maurya-anand/py-list-packages',
-        entry_points={
+    entry_points={
         'console_scripts': ['list_packages=list_packages.main:main']
     },
     license='MIT',
