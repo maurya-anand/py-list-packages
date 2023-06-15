@@ -1,0 +1,6 @@
+notes-comments.txt
+env/
+venv/
+*.pyc
+__pycache__/
+list_packages.egg-info/
