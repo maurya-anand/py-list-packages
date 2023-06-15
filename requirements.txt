@@ -1,3 +1,3 @@
 sphinx
 sphinx-autodoc-typehints
--e git+https://github.com/maurya-anand/py-list-packages.git@5bf7b3cfd869109dc6f80f38903c51df7769e009#egg=list_packages
+list_packages @ git+https://github.com/maurya-anand/py-list-packages.git
