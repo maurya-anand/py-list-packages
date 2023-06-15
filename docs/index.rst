@@ -25,3 +25,6 @@ Module Documentation
    :maxdepth: 1
 
    list_packages
+
+.. automodule:: list_packages
+   :members:
