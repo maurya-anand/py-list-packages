@@ -5,7 +5,7 @@
 
 import os
 import sys
-# import list_packages
+import list_packages
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information

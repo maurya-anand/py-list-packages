@@ -10,7 +10,6 @@ Welcome to list_packages's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   list_packages
 
 Indices and tables
 ==================
@@ -27,3 +26,5 @@ Module Documentation
    :members:
    :undoc-members:
    :show-inheritance:
+
+   list_packages
