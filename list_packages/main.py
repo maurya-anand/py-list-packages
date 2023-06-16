@@ -34,10 +34,10 @@ def list_installed_packages(format='list'):
                 dep_name = dep.key
             if str(dep.specifier):
                 dep_ver = str(dep.specifier)
-            dependencies.append({'package': dep_name, 'version' :dep_ver})
+            dependencies.append({'package': dep_name, 'version': dep_ver})
         if dependencies:
             installed_packages.append({'package': pkg_name, 'version': ver, 'depends': dependencies})
-        else :
+        else:
             installed_packages.append({'package': pkg_name, 'version': ver, 'depends': None})
     if format == 'json':
         return json.dumps(installed_packages)
@@ -62,13 +62,13 @@ def command_line():
                     dep_list.append(dep['package']+'')
         if dep_list:
             dep_string = ','.join(dep_list)
-        print (f"{package['package']}=={package['version']}\t{dep_string}")
+        print(f"{package['package']}=={package['version']}\t{dep_string}")
 
 
 if __name__ == '__main__':
     installed_packages = list_installed_packages()
     if len(sys.argv) > 1 and sys.argv[1] == 'json':
-        json_string = json.dumps(installed_packages,indent=2)
+        json_string = json.dumps(installed_packages, indent=2)
         print(json_string)
     else:
         print("Package\tDependency")
@@ -83,4 +83,4 @@ if __name__ == '__main__':
                         dep_list.append(dep['package']+'')
             if dep_list:
                 dep_string = ','.join(dep_list)
-            print (f"{package['package']}=={package['version']}\t{dep_string}")
+            print(f"{package['package']}=={package['version']}\t{dep_string}")
