@@ -1,5 +1,6 @@
 import pkg_resources
 import json
+import sys
 
 def list_installed_packages():
     """
@@ -31,15 +32,15 @@ def list_installed_packages():
             installed_packages.append({'package': pkg_name, 'version': ver, 'depends': None})
     return installed_packages
 
-def main(output='list'):
+def main(output='tab'):
     """
     Entry point for listing installed packages.
 
     Args:
         output (str, optional): Output format.
-            'print': Prints a tabular output of installed packages and their dependencies (default). Columns: Package and Dependenc(y|ies)(comma seperated items).
+            'tab': Prints a tabular output of installed packages and their dependencies (default). Columns: Package and Dependenc(y|ies)(comma seperated items).
                         Example: requests==2.31.0    charset-normalizer<4,>=2,certifi>=2017.4.17,idna<4,>=2.5,urllib3<3,>=1.21.1
-            'list': Returns a JSON formatted list of installed packages and their dependencies.
+            'json': Returns a JSON formatted list of installed packages and their dependencies.
                         Example: [
                                     {"package":"idna","version":"3.4","depends":null},
                                     {"package":"Jinja2","version":"3.1.2","depends":[{"package":"markupsafe","version":">=2.0"}]}
@@ -50,7 +51,7 @@ def main(output='list'):
     """
     installed_packages = list_installed_packages()
 
-    if output == 'print':
+    if output == 'tab':
         print("Package\tDependency")
         for package in installed_packages:
             dep_list = []
@@ -64,12 +65,12 @@ def main(output='list'):
             if dep_list:
                 dep_string = ','.join(dep_list)
             print (f"{package['package']}=={package['version']}\t{dep_string}")
-    elif output == 'list':
+    if output == 'json':
         json_string = json.dumps(installed_packages)
         print(json_string)
-        return installed_packages
-    else:
-        raise ValueError(f"Invalid output format: {output}")
 
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == 'json':
+        main('json')
+    else:
+        main()
