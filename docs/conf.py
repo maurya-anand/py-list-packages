@@ -31,7 +31,8 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # Add the path to your package's source code
-sys.path.insert(0, os.path.abspath('../list_packages'))
+# sys.path.insert(0, os.path.abspath('../list_packages'))
+sys.path.insert(0, os.path.abspath('..'))
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
