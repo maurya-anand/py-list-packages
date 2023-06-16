@@ -15,9 +15,9 @@ To install `list_packages`, follow these steps:
 3. (Optional) It is recommended to create a virtual environment to isolate the package dependencies. Run the following command to create a virtual environment (assuming you have `venv` installed):
 
 ```bash
-   cd list_packages
-   python3 -m venv env
-   pip3 install -e .
+cd list_packages
+python3 -m venv env
+pip3 install -e .
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ To install `list_packages`, follow these steps:
 After installing the package, you can run the list-packages command in the terminal to list all installed Python packages and their dependencies:
 
 ``` bash
-   list_packages
+list_packages
 ```
 
 ### Python Script/Notebook
@@ -35,8 +35,8 @@ After installing the package, you can run the list-packages command in the termi
 To use list-packages in a Python notebook, you can import the list_packages module and call the list_installed_packages() function:
 
 ``` python
-   ## import
-   from list_packages import list_installed_packages
+## import
+from list_packages import list_installed_packages
 ```
 
 ## Examples
@@ -65,23 +65,23 @@ By default, the function returns a list of dictionaries containing package infor
 - depends: List of dictionaries containing package information (list)
 
 ``` python
-   from list_packages import list_installed_packages
+from list_packages import list_installed_packages
 
-   installed_packages = list_installed_packages()
+installed_packages = list_installed_packages()
 ```
 
 Output
 
 ``` python
-   [{'setuptools': '59.6.0', 'depends': None},{'package': 'Jinja2', 'version': '3.1.2', 'depends': [{'package': 'markupsafe', 'version': '>=2.0'}]}]
+[{'setuptools': '59.6.0', 'depends': None},{'package': 'Jinja2', 'version': '3.1.2', 'depends': [{'package': 'markupsafe', 'version': '>=2.0'}]}]
 ```
 
 If you want the output in JSON format, you can pass the format='json' parameter to the list_installed_packages() function. It will return a JSON-formatted string representing the list of installed packages.
 
 ``` python
-   from list_packages import list_installed_packages
+from list_packages import list_installed_packages
 
-   installed_packages = list_installed_packages('json')
+installed_packages = list_installed_packages('json')
 ```
 
 Output
