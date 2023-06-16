@@ -24,10 +24,10 @@ def list_installed_packages(format='list'):
     If format='json', the function returns a JSON-formatted string representing the list of installed packages.
     """
     installed_packages = []
-    for d in pkg_resources.working_set:
-        [pkg_name, ver] = str(d).split(" ")
+    for pkg_obj in pkg_resources.working_set:
+        [pkg_name, ver] = str(pkg_obj).split(" ")
         dependencies = []
-        for dep in d.requires():
+        for dep in pkg_obj.requires():
             dep_name = None
             dep_ver = None
             if dep.key:
