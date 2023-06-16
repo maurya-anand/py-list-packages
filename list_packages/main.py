@@ -2,6 +2,7 @@ import pkg_resources
 import json
 import sys
 
+
 def list_installed_packages(format='list'):
     """
     Retrieve a list of installed Python packages.
@@ -43,6 +44,7 @@ def list_installed_packages(format='list'):
     else:
         return (installed_packages)
 
+
 def command_line():
     """
     :meta private:
@@ -61,6 +63,7 @@ def command_line():
         if dep_list:
             dep_string = ','.join(dep_list)
         print (f"{package['package']}=={package['version']}\t{dep_string}")
+
 
 if __name__ == '__main__':
     installed_packages = list_installed_packages()
