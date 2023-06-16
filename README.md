@@ -16,10 +16,18 @@ To install `list_packages`, follow these steps:
 
 3. (Optional) It is recommended to create a virtual environment to isolate the package dependencies. Run the following command to create a virtual environment (assuming you have `venv` installed):
 
+Via Terminal
+
 ```bash
 cd list_packages
 python3 -m venv env
 pip3 install -e .
+```
+
+Via Pip
+
+``` python
+pip install git+https://github.com/maurya-anand/py-list-packages.git
 ```
 
 ## Usage
