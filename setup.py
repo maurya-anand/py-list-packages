@@ -10,7 +10,7 @@ setup(
     packages=find_packages(),
     url='https://github.com/maurya-anand/py-list-packages',
     entry_points={
-        'console_scripts': ['list_packages=list_packages.main:main']
+        'console_scripts': ['list_packages=list_packages.main:command_line']
     },
     license='MIT',
     classifiers=[

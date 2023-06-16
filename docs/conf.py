@@ -25,6 +25,7 @@ extensions = [
 ]
 
 autosummary_generate = True
+autodoc_mock_imports = ["command_line"]
 
 templates_path = ['_templates']
 exclude_patterns = []
