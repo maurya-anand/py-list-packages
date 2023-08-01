@@ -5,7 +5,7 @@
 
 A utility to retrieve a list of installed Python packages and their dependencies.
 
-- [Documentation](https://py-list-packages.readthedocs.io/).
+- [Documentation](https://py-list-packages.readthedocs.io/)
 
 - [PyPI](https://pypi.org/project/list-packages)
 
