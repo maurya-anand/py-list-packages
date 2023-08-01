@@ -8,21 +8,11 @@ Link to the [documentation](https://py-list-packages.readthedocs.io/).
 
 ## Installation
 
-Install via Terminal:
-
-1. Clone or download the repository from GitHub to your local computer.
-
-2. Open a terminal or command prompt and navigate to the root directory of the downloaded repository.
-
-3. (Optional) It is recommended to create a virtual environment to isolate the package dependencies. Run the following command to create a virtual environment (assuming you have `venv` installed):
-
-```bash
-cd list_packages
-python3 -m venv env
-pip3 install -e .
+``` python
+pip install list-packages
 ```
 
-Install via Pip:
+Alternative:
 
 ``` python
 pip install git+https://github.com/maurya-anand/py-list-packages.git
