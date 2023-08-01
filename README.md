@@ -5,7 +5,7 @@
 
 A utility to retrieve a list of installed Python packages and their dependencies.
 
-- [Documentation](https://py-list-packages.readthedocs.io/)
+- [Technical Details](https://py-list-packages.readthedocs.io/)
 
 - [PyPI](https://pypi.org/project/list-packages)
 
@@ -21,28 +21,11 @@ Alternative:
 pip install git+https://github.com/maurya-anand/py-list-packages.git
 ```
 
-## Usage
+## Example usage
 
 ### Terminal
 
 After installing the package, you can run the list-packages command in the terminal to list all installed Python packages and their dependencies:
-
-``` bash
-list_packages
-```
-
-### Python Script/Notebook
-
-To use list-packages in a Python notebook, you can import the list_packages module and call the list_installed_packages() function:
-
-``` python
-## import
-from list_packages import list_installed_packages
-```
-
-## Examples
-
-### Terminal
 
 ``` bash
 list_packages
@@ -64,6 +47,8 @@ list_packages json
 ```
 
 ### Python script/Notebook
+
+To use list-packages in a Python notebook, you can import the list_packages module and call the list_installed_packages() function.
 
 By default, the function returns a list of dictionaries containing package information. Each dictionary has the following keys:
 
@@ -112,3 +97,8 @@ Output
   }
 ]
 ```
+
+### Links
+
+- [Changelog](./CHANGELOG.md)
+- [License](./LICENSE)
