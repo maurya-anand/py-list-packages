@@ -50,23 +50,6 @@ def command_line():
     :meta private:
     """
     installed_packages = list_installed_packages()
-    print("Package\tDependency")
-    for package in installed_packages:
-        dep_list = []
-        dep_string = None
-        if package['depends']:
-            for dep in package['depends']:
-                if dep['version']:
-                    dep_list.append(dep['package']+dep['version'])
-                else:
-                    dep_list.append(dep['package']+'')
-        if dep_list:
-            dep_string = ','.join(dep_list)
-        print(f"{package['package']}=={package['version']}\t{dep_string}")
-
-
-if __name__ == '__main__':
-    installed_packages = list_installed_packages()
     if len(sys.argv) > 1 and sys.argv[1] == 'json':
         json_string = json.dumps(installed_packages, indent=2)
         print(json_string)
@@ -84,3 +67,7 @@ if __name__ == '__main__':
             if dep_list:
                 dep_string = ','.join(dep_list)
             print(f"{package['package']}=={package['version']}\t{dep_string}")
+
+
+if __name__ == '__main__':
+    command_line()

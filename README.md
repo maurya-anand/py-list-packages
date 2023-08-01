@@ -57,6 +57,12 @@ Jinja2==3.1.2           markupsafe>=2.0
 requests==2.31.0        charset-normalizer<4,>=2,certifi>=2017.4.17,urllib3<3,>=1.21.1,idna<4,>=2.5
 ```
 
+The output can also be obtained in `json` format by using the following command in the terminal
+
+``` bash
+list_packages json
+```
+
 ### Python script/Notebook
 
 By default, the function returns a list of dictionaries containing package information. Each dictionary has the following keys:
