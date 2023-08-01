@@ -2,6 +2,7 @@
 
 [![publish](https://github.com/maurya-anand/py-list-packages/actions/workflows/publish-pypi.yml/badge.svg)](https://pypi.org/project/list-packages)
 [![tests](https://github.com/maurya-anand/py-list-packages/actions/workflows/python-package.yml/badge.svg)]()
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8205590.svg)](https://doi.org/10.5281/zenodo.8205590)
 
 A utility to retrieve a list of installed Python packages and their dependencies.
 
