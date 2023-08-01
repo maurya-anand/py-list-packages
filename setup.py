@@ -4,6 +4,7 @@ from setuptools import setup, find_packages
 setup(
     name='list_packages',
     version='1.0.2',
+    description="A package to list all the installed Python packages and their dependencies"
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='Anand Maurya',
