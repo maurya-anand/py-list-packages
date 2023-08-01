@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='list_packages',
-    version='1.0.0',
+    version='1.0.1',
     long_description='A package to list installed Python packages',
     author='Anand Maurya',
     author_email='anandmaurya@hotmail.com',
