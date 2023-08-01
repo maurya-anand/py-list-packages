@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='list_packages',  # Update the name to 'list_packages'
+    name='list_packages',
     version='1.0.0',
-    description='A package to list installed Python packages',
+    long_description='A package to list installed Python packages',
     author='Anand Maurya',
     author_email='anandmaurya@hotmail.com',
     platforms=['Any'],
