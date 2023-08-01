@@ -1,4 +1,4 @@
-name: Publish to PyPI.org
+name: PyPI
 on:
   push:
     tags:
