@@ -1,6 +1,6 @@
 # list_packages
 
-[![publish](https://github.com/maurya-anand/py-list-packages/actions/workflows/publish-pypi.yml/badge.svg)](https://pypi.org/project/list-packages)
+[![PyPI - Version](https://img.shields.io/pypi/v/list-packages)](https://pypi.org/project/list-packages)
 [![tests](https://github.com/maurya-anand/py-list-packages/actions/workflows/python-package.yml/badge.svg)]()
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8205590.svg)](https://doi.org/10.5281/zenodo.8205590)
 
